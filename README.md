@@ -1,5 +1,1 @@
-Hey Daisy! Absolutely, I'd be happy to help you craft a paragraph for your portfolio. Here's a suggestion:
 
-"Hey there! I'm Daisy, a passionate student in statistics and IT with a drive to explore the world of software engineering. With a strong foundation in analytical thinking and problem-solving, I'm eager to apply my skills and knowledge to create innovative solutions. I've worked on various projects, honing my abilities to adapt to new technologies and collaborate effectively. My enthusiasm for learning and my dedication to becoming a well-rounded software engineer fuel my desire to make a positive impact in the field. Let's connect and bring ideas to life together!"
-
-Feel free to customize it to fit your style and experiences. Good luck with your portfolio, Daisy! You've got this! 😊👩‍💻
