@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Daisy Kinyua</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="lightbox.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -136,26 +137,24 @@
         <h1 class="sub">My Work</h1>
         <div class="work-list">
           <div class="work">
-            <img src="./images/first.png" alt="project1" />
+            <a href="./images/first.png" data-lightbox="models">
+              <img src="./images/first.png" alt="project1" />
+            </a> 
           </div>
           <div class="work">
-            <img src="./images/first.png" alt="project1" />
+            <a href="./images/image2.PNG" data-lightbox="models">
+              <img src="./images/image2.PNG" alt="project1" />
+            </a>
           </div>
 
           <div class="work">
-            <img src="./images/first.png" alt="project1" />
+            <a href="./images/first.png" data-lightbox="models" >
+              <img src="./images/first.png" alt="project1" />
+            </a>
           </div>
         </div>
       </div> 
     </div>
-    <!-- Modal -->
-    <!-- <div id="modal">
-      <span class="close">&times;</span>
-      <span id="image-number" class="image-number"></span>
-      <img id="modal-img" src="" alt="">
-      <a class="prev" onclick="changeImage(-1)">&#10094;</a>
-      <a class="next" onclick="changeImage(1)">&#10095;</a>
-    </div> -->
 
     <div id="contact">
       <div class="container">
@@ -252,67 +251,6 @@
           .catch((error) => console.error("Error!", error.message));
       });
     </script>
-    <!-- <script>
-
-      var modal = document.getElementById("modal");
-
-
-      var modalImg = document.getElementById("modal-img");
-
-
-      var span = document.getElementsByClassName("close")[0];
-
-
-      var images = document.querySelectorAll('.work img');
-
-
-      function openModal(index) {
-        modal.style.display = "block";
-        modalImg.src = images[index].src;
-        modalImg.dataset.index = index;
-        updateImageNumber(index + 1, images.length);
-      }
-
-
-      span.onclick = function() {
-        modal.style.display = "none";
-      }
-
-
-      function changeImage(n) {
-        var currentIndex = parseInt(modalImg.dataset.index);
-        var newIndex = currentIndex + n;
-        console.log("Current Index:", currentIndex);
-        console.log("New Index:", newIndex);
-        if (newIndex >= 0 && newIndex < images.length) {
-          modalImg.src = images[newIndex].src;
-          modalImg.dataset.index = newIndex;
-          updateImageNumber(newIndex + 1, images.length);
-        }
-      }
-
-
-      function updateImageNumber(currentIndex, total) {
-        var imageNumber = document.getElementById("image-number");
-        imageNumber.textContent = "Image " + currentIndex + " of " + total;
-      }
-
-
-      images.forEach(function(image, index) {
-        image.addEventListener('click', function() {
-          openModal(index);
-        });
-      });
-
-
-      document.querySelector('.prev').addEventListener('click', function() {
-        changeImage(-1);
-      });
-
-      document.querySelector('.next').addEventListener('click', function() {
-        changeImage(1);
-      });
-
-    </script> -->
+    <script src="lightbox-plus-jquery.js"></script>
   </body>
 </html>
